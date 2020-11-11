@@ -9,18 +9,21 @@ const Container = styled.div`
   padding: 0 70px;
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 1px var(--color-gray);
+  border-bottom: solid 1px var(--color-lightgray);
 `;
 
 const Box = styled.div`
-  display: inline-block;
-  height: 100%;
-  padding: 0 20px;
+  display: block;
+`;
+
+const LogoBox = styled.div`
+  width: 300px;
+  padding: 30px 0;
 `;
 
 const NavContainer = styled.div`
   display: inline-block;
-  padding: 0 20px;
+  padding: 30px 20px;
 `;
 
 const NavItem = styled.h1`
@@ -31,7 +34,9 @@ const NavItem = styled.h1`
 const Header = ({ siteTitle }) => (
   <header>
     <Container>
-      <Logo />
+      <LogoBox>
+        <Logo />
+      </LogoBox>
       <Box>
         <NavContainer>
           <Link to="/">
