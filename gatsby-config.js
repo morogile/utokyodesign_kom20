@@ -4,6 +4,7 @@ module.exports = {
     description: `グラフィックデザイン概論は、東京大学で開講されている講義です。受講生の成果発表や授業の紹介を行っています。`,
     author: `utokyo-design`,
   },
+  pathPrefix: "/reponame",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

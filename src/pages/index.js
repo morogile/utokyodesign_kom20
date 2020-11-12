@@ -1,11 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import { Head1, Head2 } from "../components/heading"
-import { Section, Top1, Top1box, DeskContainer, Top2, Top3, Top4, Top5 } from "../components/wrapper"
+import { Section, Top1, Top1box, DeskContainer, Top3, Top4, Top5 } from "../components/wrapper"
 import { LinkButton, ExternalLink, BigExternalLink } from "../components/link"
 import Desk from "../components/desk"
 import { Schedule } from "../components/schedule"
