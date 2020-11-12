@@ -26,6 +26,18 @@ const Small = styled(Container)`
   margin: 0;
 `;
 
+const Big = styled(Container)`
+  width: 285px;
+  height: 37px;
+  padding: 8px 0;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: 375px) {
+    width: 100%;
+  }
+`;
+
 const Para = styled.p`
   font-size: 12px;
   color: white;
@@ -55,6 +67,16 @@ export const ExternalLink = ({link, text}) => {
       <Small>
         <Para2>{text}</Para2>
       </Small>
+    </a>
+  );
+}
+
+export const BigExternalLink = ({link, text}) => {
+  return (
+    <a href={link} style={{display: "flex", justifyContent: "space-between"}}>
+      <Big>
+        <Para2>{text}</Para2>
+      </Big>
     </a>
   );
 }

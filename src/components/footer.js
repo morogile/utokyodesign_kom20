@@ -11,17 +11,30 @@ const Wrapper = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: var(--color-black);
+  @media (max-width: 850px) {
+    padding: 0 5.3vw;
+  }
+  @media (max-width: 650px) {
+    display: block;
+  }
 `;
 
 const LeftContainer = styled.div`
   padding: 70px 0;
   width: 274px;
+  @media (max-width: 650px) {
+    padding-bottom: 10px;
+  }
 `;
 
 const RightContainer = styled.div`
   padding: 55px 0;
   display: flex;
   justify-content: flex-end;
+  @media (max-width: 650px) {
+    padding-top: 10px;
+    justify-content: space-between;
+  }
 `;
 
 const Para = styled.p`
@@ -73,7 +86,9 @@ export const Footer = () => {
     <footer>
       <Wrapper>
         <LeftContainer>
-          <LogoW />
+          <Link to="/">
+            <LogoW />
+          </Link>
           <Para>Copyright 2020グラフィックデザイン概論　All Rights Reserved.️ </Para>
         </LeftContainer>
         <RightContainer>

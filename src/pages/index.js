@@ -5,9 +5,10 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import { Head1, Head2 } from "../components/heading"
-import { Section, Top1, Top1box, DeskContainer } from "../components/wrapper"
-import { LinkButton, ExternalLink } from "../components/link"
+import { Section, Top1, Top1box, DeskContainer, Top2, Top3, Top4, Top5 } from "../components/wrapper"
+import { LinkButton, ExternalLink, BigExternalLink } from "../components/link"
 import Desk from "../components/desk"
+import { Schedule } from "../components/schedule"
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +26,7 @@ const IndexPage = () => (
           </DeskContainer>
         </Top1>
       </Section>
-      <Section id="授業紹介">
+      <Section id="授業紹介" className="grayback">
         <Head1 title="授業紹介" />
         <Top1>
           <Top1box>
@@ -49,13 +50,40 @@ const IndexPage = () => (
       </Section>
       <Section id="学生の作品">
         <Head1 title="学生の作品" />
+        <Top1>
+          <DeskContainer>
+            <Desk />
+          </DeskContainer>
+          <Top1box>
+            <p>グラフィックデザイン概論では毎年、最終週に学生に実際に手を動かしてWebサイトやアプリのUIなどの制作体験を通して授業の実践を行っています。ここでは、本年度の作品をギャラリー形式で紹介します。</p>
+          </Top1box>
+        </Top1>
         <LinkButton link="/lesson" text="ギャラリーへ" />
       </Section>
-      <Section id="ワークショップについて">
+      <Section id="ワークショップについて" className="grayback">
         <Head1 title="ワークショップについて" />
+        <Top3>
+          <p>駒場祭期間中に3回、講師とTAによるワークショップを行います。<br></br>グラフィックデザイン概論の中で実際に扱われる題材にゲーム形式で触れられます。<br></br>グラフィックデザイン概論をとろうか迷っている学生の方、あるいは東大でもユニークなこの授業がどんなもんなのか気になる方、どなたでもご自由にお越しください！（※予約制です）</p>
+        </Top3>
+        <Top4>
+          <Schedule 
+            schedules={[
+              {date: "11月21日", time: "14:00-15:00", title: "タイポグラフィーを体で感じよう"},
+              {date: "11月21日", time: "14:00-15:00", title: "タイポグラフィーを体で感じよう"},
+              {date: "11月21日", time: "14:00-15:00", title: "タイポグラフィーを体で感じよう"}
+            ]}
+            place={"Zoom上で行います。"}
+            message={"リンクは予約された方に直接メールでお送りいたします。"}
+          />
+        </Top4>
+        <BigExternalLink text="予約フォームへ" link="#" />
       </Section>
       <Section id="お問い合わせ">
         <Head1 title="お問い合わせ" />
+        <Top5>
+          <p style={{textAlign: "center"}}>講義に関する内容や取材等のお問い合わせは以下からご連絡をお願いいたします。</p>
+        </Top5>
+        <BigExternalLink text="メールに問い合わせ" link="#" />
       </Section>
     </article>
   </Layout>

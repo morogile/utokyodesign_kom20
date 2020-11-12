@@ -16,6 +16,7 @@ html {
   --color-lightgray: #E1E1E1;
   --color-black: #282828;
   --color-blue: #1767C5;
+  --color-backgray: #FAFAFA;
 }
 body {
   margin: 0;
@@ -599,4 +600,7 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+.grayback {
+  background-color: var(--color-backgray);
 }

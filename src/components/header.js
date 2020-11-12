@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import { Logo } from "./logo";
+import hamburger from "../images/hamburger.png";
 
 const Container = styled.div`
   height: 80px;
@@ -10,6 +11,9 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   border-bottom: solid 1px var(--color-lightgray);
+  @media (max-width: 768px) {
+    padding: 0 5.3vw;
+  }
 `;
 
 const Box = styled.div`
@@ -19,11 +23,25 @@ const Box = styled.div`
 const LogoBox = styled.div`
   width: 300px;
   padding: 30px 0;
+  @media (max-width: 1024px) {
+    width: 240px;
+  }
 `;
 
 const NavContainer = styled.div`
   display: inline-block;
   padding: 30px 20px;
+  @media (max-width: 840px) {
+    display: none;
+  }
+`;
+
+const Hamburger = styled.div`
+  display: inline-block;
+  padding: 26px 20px;
+  @media (min-width: 840px) {
+    display: none;
+  }
 `;
 
 const NavItem = styled.h1`
@@ -53,6 +71,9 @@ const Header = ({ siteTitle }) => (
             <NavItem>学生の作品ギャラリー</NavItem>
           </Link>
         </NavContainer>
+        <Hamburger>
+          <img src={hamburger} style={{width: "30px"}} />
+        </Hamburger>
       </Box>
     </Container>
   </header>
