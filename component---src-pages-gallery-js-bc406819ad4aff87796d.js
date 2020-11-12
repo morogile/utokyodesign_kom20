@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{yp8A:function(e,n,t){"use strict";t.r(n),t.d(n,"Gallery",(function(){return c}));var a=t("q1tI"),r=t.n(a),l=t("vrFN"),u=t("Bl7J"),c=function(){return r.a.createElement(u.a,null,r.a.createElement(l.a,{title:"学生の作品"}))};n.default=c}}]);
+//# sourceMappingURL=component---src-pages-gallery-js-bc406819ad4aff87796d.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{VVsL:function(n,e,t){"use strict";t.r(e),t.d(e,"Workshop",(function(){return c}));var r=t("q1tI"),a=t.n(r),o=t("vrFN"),u=t("Bl7J"),c=function(){return a.a.createElement(u.a,null,a.a.createElement(o.a,{title:"ワークショップについて"}))};e.default=c}}]);
+//# sourceMappingURL=component---src-pages-workshop-js-da5afd451322d5dc61e1.js.map
