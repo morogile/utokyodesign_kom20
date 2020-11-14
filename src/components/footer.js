@@ -4,6 +4,7 @@ import LogoW from "./logo_w";
 import { Link } from "gatsby";
 import twitter from "../images/twitter.png"
 import facebook from "../images/facebook.png"
+import logo_w from "../images/logo_w.png";
 
 const Wrapper = styled.div`
   padding: 0 140px;
@@ -87,7 +88,7 @@ export const Footer = () => {
       <Wrapper>
         <LeftContainer>
           <Link to="/">
-            <LogoW />
+            <img src={logo_w} />
           </Link>
           <Para>Copyright 2020グラフィックデザイン概論　All Rights Reserved.️ </Para>
         </LeftContainer>

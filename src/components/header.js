@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import { Logo } from "./logo";
+import logo from "../images/logo.png";
 import hamburger from "../images/hamburger.png";
 
 const Container = styled.div`
@@ -30,7 +31,7 @@ const LogoBox = styled.div`
 
 const NavContainer = styled.div`
   display: inline-block;
-  padding: 30px 20px;
+  padding: 36px 20px;
   @media (max-width: 840px) {
     display: none;
   }
@@ -38,7 +39,7 @@ const NavContainer = styled.div`
 
 const Hamburger = styled.div`
   display: inline-block;
-  padding: 26px 20px;
+  padding: 32px 20px;
   @media (min-width: 840px) {
     display: none;
   }
@@ -53,7 +54,7 @@ const Header = ({ siteTitle }) => (
   <header>
     <Container>
       <LogoBox>
-        <Logo />
+        <img src={logo} alt="logo" />
       </LogoBox>
       <Box>
         <NavContainer>

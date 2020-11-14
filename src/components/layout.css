@@ -66,6 +66,7 @@ template {
 a {
   background-color: transparent;
   text-decoration: none;
+  margin-bottom: 0;
 }
 a:active,
 a:hover {
@@ -85,6 +86,7 @@ dfn {
   font-style: italic;
 }
 h1 {
+  margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
