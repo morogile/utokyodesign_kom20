@@ -23,7 +23,7 @@ const Small = styled(Container)`
   height: 31px;
   padding: 6px 8px;
   display: block;
-  margin: 0;
+  margin: 20px 0 0 0;
 `;
 
 const Big = styled(Container)`

@@ -12,6 +12,16 @@ export const Section = styled.section`
   }
 `;
 
+export const SectionSub = styled.section`
+  padding: 0 24vw;
+  @media (max-width: 768px) {
+    padding: 0 12vw;
+  }
+  @media (max-width: 375px) {
+    padding: 0 6vw;
+  }
+`;
+
 export const Top1 = styled.div`
   display: flex;
   justify-content: space-between;
@@ -31,10 +41,10 @@ export const Top3 = styled.div`
 `;
 
 export const Top4 = styled.div`
-  padding: 72px 200px;
+  padding: 50px 0px;
   @media (max-width: 768px){
     width: 100%;
-    padding: 72px 0;
+    padding: 10vw 0;
   }
 `;
 
@@ -60,4 +70,19 @@ export const DeskContainer = styled.div`
   @media (max-width: 1200px) {
     margin: 20px auto;
   }
+`;
+
+export const Lead = styled.p`
+  color: var(--color-gray);
+  width: 100%;
+  margin: 52px 0;
+  @media (max-width: 500px) {
+    margin: 20px 0;
+  }
+`;
+
+export const Sub1 = styled.div`
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 60px;
 `;

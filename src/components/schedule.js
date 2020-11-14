@@ -4,9 +4,11 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 20px;
 `;
 const LabelContainer = styled.div`
   padding-right: 58px;
+  transform: translateY(3px);
   @media (max-width: 768px) {
     width: 100%;
     padding: 25px 0;
@@ -19,6 +21,8 @@ const TextsContainer = styled.div`
 `;
 const Text = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
 `;
 const Label = styled.p`
   background-color: var(--color-skyblue);
@@ -29,13 +33,10 @@ const Label = styled.p`
   text-align: center
 `;
 const Date = styled.p`
-
+  margin-right: 4vw;
 `;
 const Time = styled.p`
-
-`;
-const Title = styled.p`
-
+  margin-right: 4vw;
 `;
 const Hint = styled.p`
   color: var(--color-gray);
@@ -54,21 +55,21 @@ export const Schedule = ({schedules,place,message}) => {
             <Text>
               <Date>{schedule.date}</Date>
               <Time>{schedule.time}</Time>
-              <Title>{schedule.title}</Title>
+              <p>{schedule.title}</p>
             </Text>
           )}
         </TextsContainer>
       </Container>
       <Container>
-      <LabelContainer>
-        <Label>場所</Label>
-      </LabelContainer>
-      <TextsContainer>
-        <p>{place}</p>
-        <Hint>{message}</Hint>
-      </TextsContainer>
-    </Container>
+        <LabelContainer>
+          <Label>場所</Label>
+        </LabelContainer>
+        <TextsContainer>
+          <p>{place}</p>
+          <Hint>{message}</Hint>
+        </TextsContainer>
+      </Container>
     </>
   );
-}
+};
 

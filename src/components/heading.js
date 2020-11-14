@@ -48,6 +48,38 @@ const Heading2 = styled.h2`
   }
 `;
 
+const H3Container = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 80px;
+`;
+
+const Heading3 = styled.h1`
+  font-size: 30px;
+  font-family: inherit;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-right: 17px;
+  color: var(--color-darkgray);
+  @media (max-width: 375px) {
+    font-size: 20px;
+  }
+`;
+
+const EngHeading = styled.p`
+  font-size: 11px;
+  font-family: inherit;
+  font-weight: normal;
+  margin-bottom: 0;
+  color: var(--color-skyblue);
+  transform: translateY(4px);
+  @media (max-width: 375px) {
+   font-size: 7px; 
+   transform: translateY(6px);
+  }
+`;
+
 export const Head1 = ({title}) => {
   return (
     <Container>
@@ -68,5 +100,18 @@ export const Head2 = ({titlepre, title}) => {
         {title}
       </Heading2>
     </H2Container>
+  );
+}
+
+export const Head3 = ({title, engtitle}) => {
+  return (
+    <H3Container>
+      <Heading3>
+        {title}
+      </Heading3>
+      <EngHeading>
+        {engtitle}
+      </EngHeading>
+    </H3Container>
   );
 }
