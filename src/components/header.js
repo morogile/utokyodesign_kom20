@@ -4,7 +4,6 @@ import React from "react"
 import styled from "styled-components"
 import { Logo } from "./logo";
 import logo from "../images/logo.png";
-import hamburger from "../images/hamburger.png";
 import { Menu, ExternalLinkMenu } from "./menu";
 
 const Container = styled.div`

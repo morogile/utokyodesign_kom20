@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Head1, Head2 } from "../components/heading"
-import { Section, Top1, Top1box, DeskContainer, Top3, Top4, Top5 } from "../components/wrapper"
+import { Section, Top1, Top1box, DeskContainer, Top3, Top4, Top5, ImgWrapper, ImgSection } from "../components/wrapper"
 import { LinkButton, ExternalLink, BigExternalLink } from "../components/link"
 import Desk from "../components/desk"
 import { Schedule } from "../components/schedule"
@@ -12,6 +12,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="ホーム" />
     <article>
+      <ImgSection id="keyvisual">
+        <ImgWrapper />
+      </ImgSection>
       <Section id="グラフィックデザイン概論とは">
         <Head1 title="グラフィックデザイン概論とは" />
         <Top1>

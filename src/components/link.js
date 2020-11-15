@@ -16,6 +16,9 @@ const Container = styled.div`
     transition: all 0.1s ease-out;
     background-color: black;
   }
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `
 
 const Small = styled(Container)`

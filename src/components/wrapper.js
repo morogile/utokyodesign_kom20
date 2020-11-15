@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import keyvisual from "../images/keyvisual.jpg";
 
 export const TopWrapper = styled.div`
 
@@ -10,6 +11,10 @@ export const Section = styled.section`
   @media(min-width: 768px){
     padding: 40px 10vw;
   }
+`;
+
+export const ImgSection = styled.section`
+  
 `;
 
 export const SectionSub = styled.section`
@@ -85,4 +90,33 @@ export const Sub1 = styled.div`
   width: 100%;
   padding-top: 20px;
   padding-bottom: 60px;
+`;
+
+export const ImgWrapper = styled.div`
+  width: 100vw;
+  height: 45vw;
+  background-image: url(${keyvisual});
+  background-size: cover;
+  -ms-background-position-x: center;
+  -ms-background-position-y: center;
+  background-position: center;
+  @media (max-width: 960px) {
+    transform: scale(1.1);
+  }
+  @media (max-width: 500px) {
+    height: 350px;
+  }
+`;
+
+export const SubpageImgWrapper = styled.div`
+  width: 100vw;
+  height: 20vw;
+  background-size: cover;
+  background-image: url(${props => props.link});
+  -ms-background-position-x: center;
+  -ms-background-position-y: center;
+  background-position: center;
+  @media (max-width: 375px) {
+    height: 100px;
+  }
 `;

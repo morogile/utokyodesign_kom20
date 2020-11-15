@@ -52,7 +52,7 @@ const H3Container = styled.div`
   width: 100%;
   display: flex;
   align-items: flex-end;
-  margin-top: 120px;
+  margin-top: 60px;
 `;
 
 const Heading3 = styled.h1`

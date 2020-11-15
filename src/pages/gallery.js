@@ -1,15 +1,17 @@
 import React from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import { Lead, SectionSub } from "../components/wrapper"
+import { Lead, SectionSub, SubpageImgWrapper } from "../components/wrapper"
 import { Head3 } from "../components/heading"
 import { SubpageSection } from "../components/subpage_section"
 import { Pagenations } from "../components/pagenation"
+import lessoncover from "../images/lesson_cover.jpg";
 
 export const Gallery = () => {
   return (
     <Layout>
       <SEO title="学生の作品" />
+      <SubpageImgWrapper link={lessoncover} />
       <SectionSub id="学生の作品">
         <Head3 title="学生の作品" engtitle="Gallery" />
         <Lead>
