@@ -52,7 +52,7 @@ const H3Container = styled.div`
   width: 100%;
   display: flex;
   align-items: flex-end;
-  margin-top: 80px;
+  margin-top: 120px;
 `;
 
 const Heading3 = styled.h1`
@@ -62,7 +62,7 @@ const Heading3 = styled.h1`
   margin-bottom: 0;
   margin-right: 17px;
   color: var(--color-darkgray);
-  @media (max-width: 375px) {
+  @media (max-width: 390px) {
     font-size: 20px;
   }
 `;
