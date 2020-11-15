@@ -34,14 +34,14 @@ export const Top2 = styled.div`
 `;
 
 export const Top3 = styled.div`
-  padding: 0 100px;
+  padding: 10px 0px;
   @media (max-width: 1200px) {
     padding: 0;
   }
 `;
 
 export const Top4 = styled.div`
-  padding: 50px 0px;
+  padding: 50px 0;
   @media (max-width: 768px){
     width: 100%;
     padding: 10vw 0;
