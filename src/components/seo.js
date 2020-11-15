@@ -27,7 +27,6 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const ogpImage = site.siteMetadata.image
   const defaultTitle = site.siteMetadata?.title
 
   return (
@@ -56,7 +55,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: ogpImage
+          content: "../images/ogp.jpg"
         },
         {
           name: `twitter:card`,
