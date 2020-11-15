@@ -1,7 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import { Lead, SectionSub, SubpageImgWrapper } from "../components/wrapper"
+import { Lead, SectionSub } from "../components/wrapper"
 import { Head3 } from "../components/heading"
 import { SubpageSection } from "../components/subpage_section"
 import { Pagenations } from "../components/pagenation"

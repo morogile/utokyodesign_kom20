@@ -88,7 +88,7 @@ export const Footer = () => {
       <Wrapper>
         <LeftContainer>
           <Link to="/">
-            <img src={logo_w} />
+            <img src={logo_w} alt="logo of this lesson" />
           </Link>
           <Para>Copyright 2020グラフィックデザイン概論　All Rights Reserved.️ </Para>
         </LeftContainer>
@@ -104,12 +104,12 @@ export const Footer = () => {
           <Box>
             <Icon>
               <a href="https://twitter.com/utokyo_design">
-                <img src={twitter} />
+                <img src={twitter} alt="twitter" />
               </a>
             </Icon>
             <Icon>
               <a href="https://www.facebook.com/%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E6%A6%82%E8%AB%96-1599864340084274">
-                <img src={facebook} />  
+                <img src={facebook} alt="facebook" />  
               </a>
             </Icon>
           </Box>
