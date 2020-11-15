@@ -5,13 +5,13 @@ import { Lead, SectionSub, SubpageImgWrapper } from "../components/wrapper"
 import { Head3 } from "../components/heading"
 import { SubpageSection } from "../components/subpage_section"
 import { Pagenations } from "../components/pagenation"
-import lessoncover from "../images/lesson_cover.jpg";
+import LessonCoverWrapper from "../components/lesson_cover"
 
 export const Lesson = () => {
   return (
     <Layout>
       <SEO title="授業紹介" />
-      <SubpageImgWrapper link={lessoncover} />
+      <LessonCoverWrapper />
       <SectionSub id="授業紹介">
         <Head3 title="授業紹介" engtitle="Introduction of the Lesson" />
         <Lead>

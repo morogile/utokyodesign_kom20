@@ -1,7 +1,7 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it
+export const onClientEntry = () => { //eslint-disable-line
+  // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
+  if (!(`IntersectionObserver` in window)) { //eslint-disable-line
+    import(`intersection-observer`) //eslint-disable-line
+    console.log(`# IntersectionObserver is polyfilled!`) //eslint-disable-line
+  }
+}
