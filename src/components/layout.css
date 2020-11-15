@@ -2,7 +2,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em 'Noto Sans JP', sans-serif;
+  font: 112.5%/1.45em 'Noto Sans JP', 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
   font-family: 'Noto Sans JP', sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;

@@ -22,7 +22,7 @@ const TextsContainer = styled.div`
 const Text = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 `;
 const Label = styled.p`
   background-color: var(--color-skyblue);
