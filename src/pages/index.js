@@ -13,7 +13,7 @@ import GelleryImage from "../components/gallery_page";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="ホーム" />
+    <SEO title="ホーム" image="../images/ogp.jpg" />
     <article>
       <KeyvisualWrapper />
       <Section id="グラフィックデザイン概論とは">
