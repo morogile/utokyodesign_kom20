@@ -43,10 +43,13 @@ const BeforeText = styled.p`
     }
   }
   @media (max-width: 960px) {
-    font-size: 2vw;
+    font-size: 2.6vw;
   }
-  @media (max-width: 420px) {
-    font-size: 10px;
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
+  @media (max-width: 350px) {
+    font-size: 2.6vw;
   }
 `;
 
@@ -66,10 +69,13 @@ const AfterText = styled.p`
     }
   }
   @media (max-width: 960px) {
-    font-size: 2vw;
+    font-size: 2.6vw;
   }
-  @media (max-width: 420px) {
-    font-size: 10px;
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
+  @media (max-width: 350px) {
+    font-size: 2.6vw;
   }
 `;
 

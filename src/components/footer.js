@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import LogoW from "./logo_w";
 import { Link } from "gatsby";
 import twitter from "../images/twitter.png"
 import facebook from "../images/facebook.png"
@@ -96,8 +95,8 @@ export const Footer = () => {
           <BoxWithBorder>
             <UList>
               <Link to="/"><List>トップページ</List></Link>
-              <Link to="/lesson"><List>授業紹介</List></Link>
-              <Link to="/gallery"><List>ギャラリー</List></Link>
+              <Link to="../lesson"><List>授業紹介</List></Link>
+              <Link to="../gallery"><List>ギャラリー</List></Link>
               <Link to="/#ワークショップ"><LastList>ワークショップ</LastList></Link>
             </UList>
           </BoxWithBorder>

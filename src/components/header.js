@@ -144,8 +144,8 @@ const DrawerMode = ({ setMenuOpen, active }) => {
       <Blackback onClick={() => setMenuOpen(false)} className={active ? "active" : ""} ></Blackback>
       <Drawer className={active ? "active" : ""}>
         <Menu text="トップページ" link="/" />
-        <Menu text="授業紹介" link="/lesson" />
-        <Menu text="学生の作品" link="gallery" />
+        <Menu text="授業紹介" link="../lesson/" />
+        <Menu text="学生の作品" link="../gallery/" />
         <MenuLine></MenuLine>
         <ExternalLinkMenu text="駒場祭公式" link="https://www.komabasai.net/71/visitor/" />
       </Drawer>
@@ -159,7 +159,9 @@ const Header = ({ siteTitle }) => {
     <HeaderBox>
       <Container>
         <LogoBox>
-          <img src={logo} alt="logo" />
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </LogoBox>
         <Box>
           <NavContainer>
@@ -168,12 +170,12 @@ const Header = ({ siteTitle }) => {
             </Link>
           </NavContainer>
           <NavContainer>
-            <Link to="/lesson">
+            <Link to="../lesson/">
               <NavItem>授業紹介</NavItem>
             </Link>
           </NavContainer>
           <NavContainer>
-            <Link to="/gallery">
+            <Link to="../gallery/">
               <NavItem>学生の作品ギャラリー</NavItem>
             </Link>
           </NavContainer>

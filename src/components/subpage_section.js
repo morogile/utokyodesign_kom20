@@ -2,16 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import { Sub1, SectionSub } from "../components/wrapper"
 import { Head1 } from "../components/heading"
-import Desk from "../components/desk"
+import Image from "../components/subpage_img";
 
 const PicContainer = styled.div`
   padding: 3vw 7vw;
-  @media (max-width: 375px) {
-    padding: 0;
+  @media (max-width: 450px) {
+    padding: 10px 0;
   }
 `;
 
-export const SubpageSection = ({children, id, title}) => {
+export const SubpageSection = ({children, id, title, filename}) => {
   return (
     <>
       <SectionSub id={id}>
@@ -19,10 +19,14 @@ export const SubpageSection = ({children, id, title}) => {
         <Sub1>
           {children}
           <PicContainer>
-            <Desk />
+            <Image filename={filename} alt={id} />
           </PicContainer>
         </Sub1>
       </SectionSub>
     </>
   );
 }
+
+SubpageSection.defaultProps = {
+  filename: "desk.jpg"
+};

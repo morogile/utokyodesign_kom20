@@ -55,7 +55,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: "../images/ogp.jpg"
+          content: site.siteMetadata.image
         },
         {
           name: `twitter:card`,
