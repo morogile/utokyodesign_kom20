@@ -59,11 +59,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:title`,
@@ -73,6 +69,9 @@ function SEO({ description, lang, meta, title, image }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          
+        }
       ].concat(meta)}
     />
   )
