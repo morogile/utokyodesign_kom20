@@ -10,10 +10,11 @@ import { Schedule } from "../components/schedule"
 import KeyvisualWrapper from "../components/keyvisual"
 import Image from "../components/subpage_img";
 import GelleryImage from "../components/gallery_page";
+import image from "../images/ogp.jpg";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="ホーム" image="../images/ogp.jpg" />
+    <SEO title="ホーム" image={image} />
     <article>
       <KeyvisualWrapper />
       <Section id="グラフィックデザイン概論とは">
