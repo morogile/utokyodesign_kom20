@@ -61,7 +61,7 @@ const IndexPage = () => (
             <p>グラフィックデザイン概論では毎年、最終週に学生に実際に手を動かしてWebサイトやアプリのUIなどの制作体験を通して授業の実践を行っています。ここでは、本年度の作品をギャラリー形式で紹介します。</p>
           </Top1box>
         </Top1>
-        <LinkButton link="/lesson" text="ギャラリーへ" />
+        <LinkButton link="/gallery" text="ギャラリーへ" />
       </Section>
       <Section id="ワークショップについて" className="grayback">
         <Head1 title="ワークショップについて" />
