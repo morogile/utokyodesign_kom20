@@ -6,11 +6,12 @@ import { Head3 } from "../components/heading"
 import { SubpageSection } from "../components/subpage_section"
 import { Pagenations } from "../components/pagenation"
 import LessonCoverWrapper from "../components/lesson_cover"
+import image from "../images/ogp3.jpg";
 
 export const Lesson = () => {
   return (
     <Layout>
-      <SEO title="授業紹介" />
+      <SEO title="授業紹介" image={image} />
       <LessonCoverWrapper />
       <SectionSub id="授業紹介">
         <Head3 title="授業紹介" engtitle="Introduction of the Lesson" />

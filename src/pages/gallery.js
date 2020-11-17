@@ -7,6 +7,7 @@ import { SubpageSection } from "../components/subpage_section"
 import { Pagenations } from "../components/pagenation"
 import lessoncover from "../images/lesson_cover.jpg";
 import styled from "styled-components"
+import image from "../images/ogp2.jpg";
 
 const Label = styled.p`
   display: inline-block;
@@ -24,7 +25,7 @@ const Label = styled.p`
 export const Gallery = () => {
   return (
     <Layout>
-      <SEO title="学生の作品" />
+      <SEO title="学生の作品" image={image} />
       <SubpageImgWrapper link={lessoncover} />
       <SectionSub id="学生の作品">
         <Head3 title="学生の作品" engtitle="Gallery" />
