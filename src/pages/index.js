@@ -71,15 +71,15 @@ const IndexPage = () => (
         <Top4>
           <Schedule 
             schedules={[
-              {date: "11月21日", time: "14:00-15:00", title: "ロゴについて（TA諸井）"},
-              {date: "11月22日", time: "14:00-15:00", title: "ライブデザイン（TA藤井）"},
-              {date: "11月23日", time: "14:00-15:00", title: "“伝わりづらい”をデザインの力で”伝わる”に（講師保田）"}
+              {date: "11月21日", time: "14:00-15:00", title: "ロゴについて（TA諸井）", key: "1121"},
+              {date: "11月22日", time: "14:00-15:00", title: "ライブデザイン（TA藤井）", key: "1122"},
+              {date: "11月23日", time: "14:00-15:00", title: "“伝わりづらい”をデザインの力で”伝わる”に（講師保田）", key: "1123"}
             ]}
             place={"Zoom上で行います。"}
             message={"リンクは予約された方に直接メールでお送りいたします。"}
           />
         </Top4>
-        <BigExternalLink text="予約フォームへ" link="https://forms.gle/Bqw66rgWYMLNfUds6" />
+        <BigExternalLink text="予約フォームへ" link="#" />
       </Section>
       <Section id="お問い合わせ">
         <Head1 title="お問い合わせ" />

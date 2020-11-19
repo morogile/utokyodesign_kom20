@@ -6,6 +6,7 @@ html {
   font-family: 'Noto Sans JP', sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 :root {
   --color-skyblue: #008cd6;

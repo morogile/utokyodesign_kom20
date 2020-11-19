@@ -7,7 +7,6 @@ export const TopWrapper = styled.div`
 
 export const Section = styled.section`
   padding: 40px 5.3vw;
-  overflow: hidden;
   @media(min-width: 768px){
     padding: 40px 10vw;
   }

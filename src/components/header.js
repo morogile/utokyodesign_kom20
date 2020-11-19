@@ -128,7 +128,7 @@ const Drawer = styled.nav`
 const HeaderBox = styled.div`
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   background-color: white;
   z-index: 5;
 `;

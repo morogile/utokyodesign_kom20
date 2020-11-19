@@ -52,7 +52,7 @@ export const Schedule = ({schedules,place,message}) => {
         </LabelContainer>
         <TextsContainer>
           {schedules.map(schedule => 
-            <Text>
+            <Text key={schedule.key}>
               <Date>{schedule.date}</Date>
               <Time>{schedule.time}</Time>
               <p>{schedule.title}</p>
