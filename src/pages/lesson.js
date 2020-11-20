@@ -11,7 +11,6 @@ import image from "../images/ogp3.jpg";
 export const Lesson = () => {
   return (
     <Layout>
-      <SEO title="授業紹介" image={image} />
       <LessonCoverWrapper />
       <SectionSub id="授業紹介">
         <Head3 title="授業紹介" engtitle="Introduction of the Lesson" />

@@ -14,7 +14,6 @@ import image from "../images/ogp.jpg";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="ホーム" image={image} />
     <article>
       <KeyvisualWrapper />
       <Section id="グラフィックデザイン概論とは">
@@ -79,7 +78,7 @@ const IndexPage = () => (
             message={"リンクは予約された方に直接メールでお送りいたします。"}
           />
         </Top4>
-        <BigExternalLink text="予約フォームへ" link="#" />
+        <BigExternalLink text="予約フォームへ" link="https://forms.gle/Bqw66rgWYMLNfUds6" />
       </Section>
       <Section id="お問い合わせ">
         <Head1 title="お問い合わせ" />

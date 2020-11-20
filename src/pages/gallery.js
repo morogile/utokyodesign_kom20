@@ -25,7 +25,6 @@ const Label = styled.p`
 export const Gallery = () => {
   return (
     <Layout>
-      <SEO title="学生の作品" image={image} />
       <SubpageImgWrapper link={lessoncover} />
       <SectionSub id="学生の作品">
         <Head3 title="学生の作品" engtitle="Gallery" />
