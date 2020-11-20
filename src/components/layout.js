@@ -26,11 +26,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <SEO title={"東京大学グラフィックデザイン概論駒場祭サイト"} image={image}>
+    <>
+      <SEO title={"東京大学グラフィックデザイン概論駒場祭サイト"} image={image}/>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main style={{marginTop: "70px"}}>{children}</main>
       <Footer />
-    </SEO>
+    </>
   )
 }
 
