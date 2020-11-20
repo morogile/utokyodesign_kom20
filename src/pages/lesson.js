@@ -37,7 +37,7 @@ export const Lesson = () => {
         <p>これまでの授業で扱ったデザインの上流工程に該当するUX。UXの正式な定義に触れつつ「何かを使うときの体験」と大雑把に捉えた上で、製品・サービスのユーザーの人物像を正確に捉えるべく5W1Hの要素に注目しました。5W1Hの中で、例えばWhoを詳細に捉えるためのペルソナ設定や、Howを設計するためのカスタマージャーニー、Whyを把握するためのペイン・ゲイン・ベネフィットといったフレームワークを学びました。ワークショップでは実在のアプリやウェブサイトを取り上げ、UI・UXについて分析しました。</p>
       </SubpageSection>
       <SectionSub id="pagenation">
-        <Pagenations nexttext="最終成果物ギャラリー" nextlink="/gallery" />
+        <Pagenations nexttext="学生の作品" nextlink="/gallery" />
       </SectionSub>
     </Layout>
   );
