@@ -54,6 +54,10 @@ function SEO({ description, lang, meta, title, image }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: image
+        },
+        {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
@@ -69,10 +73,6 @@ function SEO({ description, lang, meta, title, image }) {
           name: `twitter:site`,
           content: `@utokyo_design`
         },
-        {
-          property: `og:image`,
-          content: image
-        }
       ].concat(meta)}
     />
   )
