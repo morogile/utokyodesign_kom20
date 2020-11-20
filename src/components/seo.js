@@ -73,6 +73,10 @@ function SEO({ description, lang, meta, title, image }) {
           name: `twitter:site`,
           content: `@utokyo_design`
         },
+        {
+          name: `twitter:image`,
+          content: image
+        }
       ].concat(meta)}
     />
   )
